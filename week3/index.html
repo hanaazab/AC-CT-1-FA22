@@ -16,24 +16,13 @@
 <body>
     <header>
         <button id="colorBtn">Click me! </button>
+        <button id="textBtn">Click for text!</button>
+        <img src="SNice (1).svg" alt="smiley face" id="imgBtn">
+
     </header>
+
     <main id="mainElem"></main>
 
-    <script> 
-    let clrButton = document.getElementById("colorBtn")
-    console.log(clrButton)
-    const mnElement = document.getElementById("mainElem")
-    
-    clrButton.addEventListener("click", ()=>{
-        let red = Math.random()*255
-        let green = Math.random()*255
-        let blue = Math.random()*255
-        console.log(red)
-        console.log(green)
-        console.log(blue)
-        mnElement.style.backgroundColor = "rgb("+ red + "," + green + "," + blue + ")"
-    })
-
-    </script>
+    <script> src = "script.js" </script>
 </body>
 </html>
