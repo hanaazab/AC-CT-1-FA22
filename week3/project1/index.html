@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Display Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <script> src = "script.js" </script>
+ 
 
     <style>
 main{
@@ -16,20 +16,34 @@ main{
 
 </head>
 <body>
-    <div class="container">
-
-        <img src="Bel Air Portrait_.png" alt="" srcset="">
-        <img src="Watts Tower - Portarit .png" alt="" srcset="">
-        <img src="Bel Air Portrait_.png" alt="" srcset="">
-        <img src="Mise En Abyme_.png" alt="" srcset="">
-        <img src="ParaPortrait - Final .png" alt="" srcset="">
-        <img src="Mise En Abyme_.png" alt="" srcset="">
-
+  
+ <!-- The grid: four columns -->
+    <div class="row">
+        <div class="column">
+        <img src="Bel Air Portrait_.png"  alt="Surveillance/Bel Air" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+        <img src="Watts Tower - Portarit .png" alt="Surveillance/Watts" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+        <img src="Mise En Abyme_.png" alt="Self-Surveilled" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+        <img src="ParaPortrait - Final .png" alt="The Fourth Dimension" onclick="myFunction(this);">
+        </div>
     </div>
- 
-    <main id="mainElem"></main>
-
     
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+    
+    </div>
+
+    <script> src = "script.js" </script>
 
 </body>
 </html>
